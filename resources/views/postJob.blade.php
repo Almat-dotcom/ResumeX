@@ -33,7 +33,7 @@
                     </div>
                     <form class="mt-3" action="{{ route('add-job')}}" method="post">
                         @csrf
-                        <input type="hidden" name="emp_id" value="{{$user[0]->id}}">
+                        <input type="hidden" name="emp_id" value="{{$user->id}}">
                         <div class="form-group">
                             <input type="text" name="job_title" placeholder="Job Title*" class="form-control">
                         </div>

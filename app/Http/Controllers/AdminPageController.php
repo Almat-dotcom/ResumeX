@@ -182,9 +182,13 @@ class AdminPageController extends Controller
             return redirect()->route('employer-home');
         }else if($student!=null){
             $req->session()->put('myUser', $student);
-            return redirect()->route('students');
+           // return redirect()->route('students');
+            $data=Works::all();
+            $employers=Employers::all();
+             return view("studentMain",compact('data','employers'));
+        }else {
+            return "heeeey";
         }
-        return "heeeey";
     }
 
     public function empHome(Request $request)
@@ -247,7 +251,7 @@ class AdminPageController extends Controller
             $emp = $request->session()->get('myUser');
 
             $data = Works::all();
-            return view('employerMain', compact('data'));
+            return view('studentMain', compact('data'));
         }
         return "okokoko";
     }

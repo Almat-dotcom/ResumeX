@@ -1,38 +1,28 @@
-@extends('layouts.appEmployer')
+@extends('layouts.appStudent')
 @section('title-block')
     Post Job
 @endsection
 @section('content')
     <div class="container" style="display: flex">
-        <table class="table table-striped mt-5">
-            <thead>
-            <tr>
-                <th>ID</th>
-                <th>JOB TITLE</th>
-                <th>SKILLS</th>
-                <th>DESCRIPTION</th>
-                <th>CITY</th>
-                <th>SALARY</th>
-                <th>DETAILS</th>
-            </tr>
-            </thead>
-            <tbody>
-            @foreach($data as $el)
-                <tr>
-                    <td>{{$el->id}}</td>
-                    <td>{{$el->job_title}}</td>
-                    <td>{{$el->skills}}</td>
-                    <td>{{$el->description}}</td>
-                    <td>{{$el->city_id}}</td>
-                    <td>{{$el->salary}}</td>
-                    <td>
-                        <a href="{{ route('detail-job',$el->id) }}">
-                            <button class="btn btn-warning">Details</button>
-                        </a>
-                    </td>
-                </tr>
+
+        @foreach($data as $el)
+            @foreach($employers as $emp)
+                @if($el->employer_id==$emp->id)
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{$emp->picture_llp}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                @endif
             @endforeach
-            </tbody>
-        </table>
+        @endforeach
+
     </div>
 @endsection

@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bfa379f-1148-422e-87c0-d0a2ac63809b" name="Default Changelist" comment="" />
+    <list default="true" id="7bfa379f-1148-422e-87c0-d0a2ac63809b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/inc/navbarStudent.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/appStudent.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminPageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/postJob.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/postJob.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/studentMain.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/studentMain.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +42,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -136,7 +164,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/inc" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -148,11 +176,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\views\inc" />
+      <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\views\layouts" />
       <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\views" />
       <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\js" />
       <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\css" />
-      <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\views\inc" />
-      <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\views\layouts" />
     </key>
   </component>
   <component name="RunManager">
@@ -175,12 +203,24 @@
       <workItem from="1606825351222" duration="35738000" />
       <workItem from="1607159186106" duration="4571000" />
       <workItem from="1607164585505" duration="8384000" />
-      <workItem from="1607181409817" duration="1138000" />
+      <workItem from="1607181409817" duration="1698000" />
+      <workItem from="1607183157922" duration="2390000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606829339984">
