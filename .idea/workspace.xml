@@ -19,14 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bfa379f-1148-422e-87c0-d0a2ac63809b" name="Default Changelist" comment="Request Delete Commit">
-      <change afterPath="$PROJECT_DIR$/public/cssFiles/MainPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/cssFiles/SignIn.css" afterDir="false" />
+    <list default="true" id="7bfa379f-1148-422e-87c0-d0a2ac63809b" name="Default Changelist" comment="Css Import Styles">
+      <change afterPath="$PROJECT_DIR$/resources/views/employerApplications.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminPageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/inc/navbarEmployer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inc/navbarEmployer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +206,7 @@
       <workItem from="1607159186106" duration="4571000" />
       <workItem from="1607164585505" duration="8384000" />
       <workItem from="1607181409817" duration="1698000" />
-      <workItem from="1607183157922" duration="21142000" />
+      <workItem from="1607183157922" duration="24507000" />
     </task>
     <task id="LOCAL-00001" summary="Student Home Commit">
       <created>1607194443085</created>
@@ -233,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607249573501</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Css Import Styles">
+      <created>1607264575717</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607264575717</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +257,8 @@
     <MESSAGE value="Student Home Commit" />
     <MESSAGE value="Student Request Commit" />
     <MESSAGE value="Request Delete Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Request Delete Commit" />
+    <MESSAGE value="Css Import Styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Css Import Styles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="263" y="19" key="#CLI_Interpreters" timestamp="1607197376234">

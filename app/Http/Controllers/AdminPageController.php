@@ -292,11 +292,12 @@ class AdminPageController extends Controller
             //$applies = DB::table('request')->where('student_id', '=', $stud->id)->get();
             $students=Students::all();
             $w=DB::table('works')
+                ->where('works.employer_id','=',$employer->id)
                 ->join('request','works.id','=','request.work_id')
                 ->join('students','students.id','=','request.student_id')
-                ->select('works.*')
+                ->select('students.*','works.*')
                 ->get();
-            return view("studentRequests",compact('w','students','employer'));
+            return view("employerApplications",compact('w','students','employer'));
         }
     }
 }
