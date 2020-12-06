@@ -19,74 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bfa379f-1148-422e-87c0-d0a2ac63809b" name="Default Changelist" comment="Student Request Commit">
+    <list default="true" id="7bfa379f-1148-422e-87c0-d0a2ac63809b" name="Default Changelist" comment="Request Delete Commit">
+      <change afterPath="$PROJECT_DIR$/public/cssFiles/MainPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/cssFiles/SignIn.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminPageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/Flaticon.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/flexslider-icon.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/flexslider-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/flexslider-icon.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/flexslider-icon.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/slick.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/slick.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/slick.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/fonts/slick.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/about-fullscreen-1-1920x700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/about-image-1-940x460.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/about-image-2-940x460.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/about-image-3-940x460.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/banner-image-1-1920x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/blog-image-1-940x460.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/blog-image-2-940x460.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/blog-image-3-940x460.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/blog-image-fullscren-1-1920x700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/contact-1-720x480.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/features-first-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/job-image-1-1200x600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/line-dec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/product-1-720x480.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/product-2-720x480.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/product-3-720x480.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/product-4-720x480.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/product-5-720x480.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/product-6-720x480.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/team-image-1-646x680.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/team-image-2-646x680.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/team-image-3-646x680.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/team-image-4-646x680.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/images/video.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/js/accordions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/js/custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/js/imgfix.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/js/jquery-2.1.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/js/jquery.counterup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/js/mixitup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/js/popper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/js/scrollreveal.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/js/waypoints.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog-details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/inc/navbarStudent.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inc/navbarStudent.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/inc/navbarEmployer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inc/navbarEmployer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/job-details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/jobs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/studentMain.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/studentMain.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/studentRequests.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/studentRequests.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/team.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/terms.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/testimonials.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,6 +41,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -227,6 +167,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -237,6 +178,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\storage\app\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\views" />
       <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\views\inc" />
@@ -266,7 +210,7 @@
       <workItem from="1607159186106" duration="4571000" />
       <workItem from="1607164585505" duration="8384000" />
       <workItem from="1607181409817" duration="1698000" />
-      <workItem from="1607183157922" duration="14855000" />
+      <workItem from="1607183157922" duration="21142000" />
     </task>
     <task id="LOCAL-00001" summary="Student Home Commit">
       <created>1607194443085</created>
@@ -282,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607243757126</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Request Delete Commit">
+      <created>1607249573501</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607249573501</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +253,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Student Home Commit" />
     <MESSAGE value="Student Request Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Student Request Commit" />
+    <MESSAGE value="Request Delete Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Request Delete Commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="263" y="19" key="#CLI_Interpreters" timestamp="1607197376234">
@@ -345,10 +297,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606840634189" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607243758511">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607249570914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607243758511" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607249570914" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607161074642">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

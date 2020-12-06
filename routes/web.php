@@ -37,6 +37,8 @@ Route::get('/Employer/{id}', 'App\Http\Controllers\AdminPageController@employer'
 
 Route::get('/employers/postJob', 'App\Http\Controllers\AdminPageController@employerPostJob')->name('employer-postJob');
 
+Route::get('/employers/applications', 'App\Http\Controllers\AdminPageController@employerApplications')->name('employer-applications');
+
 Route::get('/login', 'App\Http\Controllers\AdminPageController@login')->name('login');
 
 Route::get('/login/auth', 'App\Http\Controllers\AdminPageController@auth')->name('auth');

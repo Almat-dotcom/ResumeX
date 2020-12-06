@@ -3,7 +3,7 @@
 <head>
 
     <link rel="stylesheet" type="text/css" href="SignIn.css">
-    <link rel="stylesheet" type="text/css" href="MainPage.css">
+    <link rel="stylesheet" type="text/css" href="cssFiles/MainPage.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -49,7 +49,7 @@
 <div class="backMain pb-3">
     <div class="job-search-hero pb-3">
         <div class="container ">
-            <img src="pictures/6.png"
+            <img src="{{Storage::disk('local')->url('pictures/6.png')}}"
                  alt="Dice logo" class="dice-brand">
             <div style="display: flex">
                 <div id="slot-words-header" class="h1 slot-words-container" style="">
@@ -101,12 +101,12 @@
             </article>
         </div>
         <div class="col-sm-6 offset-sm-1">
-            <img style="width: 90%" src="pictures/1.PNG">
+            <img style="width: 90%" src="{{Storage::disk('local')->url('pictures/1.PNG')}}">
         </div>
     </div>
     <div class="row mt-lg-5">
         <div class="col-sm-5 offset-sm-1 animation-text d-flex align-items-center">
-            <img style="width: 90%" src="pictures/2.PNG">
+            <img style="width: 90%" src="{{Storage::disk('local')->url('pictures/2.PNG')}}">
         </div>
         <div class="col-sm-4 ">
             <article class="has-edit-button">
@@ -130,7 +130,7 @@
             </article>
         </div>
         <div class="col-sm-6 offset-sm-1">
-            <img style="width: 90%" src="pictures/3.PNG">
+            <img style="width: 90%" src="{{Storage::disk('local')->url('pictures/3.PNG')}}">
         </div>
     </div>
 
@@ -146,7 +146,7 @@
                             <a href="/" class="footer-link" data-item-analytics="">
 
                                 <img width="150px"
-                                     src="pictures/6.png"
+                                     src="{{Storage::disk('local')->url('pictures/6.png')}}"
                                      data-src="/binaries/content/gallery/dice/icons/dice-logo.svg" alt="Dice logo"
                                      class="" style="">
                             </a>
@@ -204,7 +204,7 @@
                                 <li><a href="https://apps.apple.com/app/id794201100" rel="nofollow" class="footer-link"
                                        data-item-analytics="">
 
-                                        <img src="pictures/4.png"
+                                        <img src="{{Storage::disk('local')->url('pictures/4.png')}}"
                                              data-src="/binaries/content/gallery/dice/icons/apple-app-store-badge.svg"
                                              alt="App Store" class="" style="width: 127px;">
                                     </a>
@@ -213,7 +213,7 @@
                                     <a href="https://play.google.com/store/apps/details?id=com.dice.app.jobs&amp;referrer=trackingcode%3DDI_OS_UN_MA_UP%26utm_campaign%3DDice%2520Universal%2520Header%2520and%2520Footer%26utm_source%3DDice%26utm_medium%3DOnsite%26utm_content%3DUniversal%26utm_term%3DUnpaid"
                                        rel="nofollow" class="footer-link" data-item-analytics="">
 
-                                        <img src="pictures/5.png"
+                                        <img src="{{Storage::disk('local')->url('pictures/5.png')}}"
                                              data-src="/binaries/content/gallery/dice/icons/google-play-badge.png"
                                              alt="Google Play" class=""
                                              style="width: 147px; height: 60px; margin-left: -10px; margin-top: -15px;">
@@ -230,7 +230,7 @@
                         <div class="has-edit-button"></div>
                         <p>Done By Students from CSSE-1803 (Sagandykov Almat && Tulekova Ulbolsyn)</p>
 
-                        <p><img width="45px" src="pictures/6.png">&nbsp; &nbsp;<a
+                        <p><img width="45px" src=".{{Storage::disk('local')->url('pictures/6.png')}}">&nbsp; &nbsp;<a
                                 href="https://iitu.kz/ru/" style="margin-top: -20px">IITU</a>&nbsp;</p>
                     </div>
                 </div>

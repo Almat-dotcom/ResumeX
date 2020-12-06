@@ -13,6 +13,9 @@
             <li class="nav-item active">
                 <a class="nav-link" href="{{route('employer-postJob')}}">Post Job</a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{route('employer-applications')}}">Applications</a>
+            </li>
         </ul>
     </div>
 </nav>

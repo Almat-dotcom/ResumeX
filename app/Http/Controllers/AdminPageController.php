@@ -273,7 +273,7 @@ class AdminPageController extends Controller
             $employers=Employers::all();
             $w=DB::table('works')
                 ->join('request','works.id','=','request.work_id')
-                ->join('students','students.id','=','request.student_id')
+                ->where('request.student_id','=',$stud->id)
                 ->select('works.*')
                 ->get();
             return view("studentRequests",compact('w','employers','stud'));
@@ -284,6 +284,20 @@ class AdminPageController extends Controller
         DB::table('request')->where('student_id', '=', $request->input('student_id'))->where('work_id','=',$request->input('work_id'))->delete();
         return redirect()->route('students')->with('success', 'Request was deleted successfully!!!');
 
+    }
+
+    public function employerApplications(Request $request){
+        if ($request->session()->has('myUser')) {
+            $employer = $request->session()->get('myUser');
+            //$applies = DB::table('request')->where('student_id', '=', $stud->id)->get();
+            $students=Students::all();
+            $w=DB::table('works')
+                ->join('request','works.id','=','request.work_id')
+                ->join('students','students.id','=','request.student_id')
+                ->select('works.*')
+                ->get();
+            return view("studentRequests",compact('w','students','employer'));
+        }
     }
 }
 
