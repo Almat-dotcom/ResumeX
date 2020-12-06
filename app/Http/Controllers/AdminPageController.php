@@ -279,5 +279,11 @@ class AdminPageController extends Controller
             return view("studentRequests",compact('w','employers','stud'));
         }
     }
+
+    public function removeRequest(Request $request){
+        DB::table('request')->where('student_id', '=', $request->input('student_id'))->where('work_id','=',$request->input('work_id'))->delete();
+        return redirect()->route('students')->with('success', 'Request was deleted successfully!!!');
+
+    }
 }
 

@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('students/newRequest','App\Http\Controllers\AdminPageController@newRequest')->name('new.request');
 
+Route::post('students/removeRequest','App\Http\Controllers\AdminPageController@removeRequest')->name('remove.request');
+
+
 Route::get('students/requests','App\Http\Controllers\AdminPageController@studRequests')->name('stud-requests');
 
 

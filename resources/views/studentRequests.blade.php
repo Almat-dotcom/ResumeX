@@ -3,13 +3,13 @@
     Post Job
 @endsection
 @section('content')
-    <div class="container" style="display: flex">
-
+    <div class="container" >
+        <div class="row">
         @foreach($w as $el)
             @foreach($employers as $emp)
                 @if($el->employer_id==$emp->id)
-                    <div class="col-4">
-                        <form action="{{route('new.request')}}" method="post">
+                    <div class="col-4 mt-3">
+                        <form action="{{route('remove.request')}}" method="post">
                             @csrf
                             <input type="hidden" value="{{$stud->id}}" name="student_id">
                             <input type="hidden" value="{{$el->id}}" name="work_id">
@@ -20,7 +20,7 @@
                                     <h5 class="card-title">{{$el->salary}} $</h5>
                                     <h5 class="card-title">{{$el->job_title}}: {{$el->skills}}</h5>
                                     <p class="card-text">{{$el->description}}</p>
-                                    <button class="btn btn-primary">Apply</button>
+                                    <button class="btn btn-danger">Remove Apply</button>
                                 </div>
                             </div>
                         </form>
@@ -28,6 +28,6 @@
                 @endif
             @endforeach
         @endforeach
-
+        </div>
     </div>
 @endsection

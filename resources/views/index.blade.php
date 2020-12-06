@@ -1,372 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 
-  <head>
-      <!-- CSS only -->
+    <link rel="stylesheet" type="text/css" href="SignIn.css">
+    <link rel="stylesheet" type="text/css" href="MainPage.css">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="tinymce/tinymce/tinymce.min.js"></script>
+    <script>tinymce.init({selector: 'textarea'});</script>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <title>MAIN</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Main Page</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <title>PHPJabbers.com | Free Job Agency Website Template</title>
-
-    <link rel="stylesheet" type="text/css" href="<? php echo asset( 'assets/css/bootstrap.min.css')?">
-
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/font-awesome.css')}}">
-
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
-
-
-    </head>
-
-    <body>
-
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-      <div class="preloader-inner">
-        <span class="dot"></span>
-        <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Contacts <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="SignInPage.html">Sign In</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Registration.html">Sign Up</a>
+            </li>
+        </ul>
     </div>
-    <!-- ***** Preloader End ***** -->
+</nav>
+<div class="backMain pb-3">
+    <div class="job-search-hero pb-3">
+        <div class="container ">
+            <img src="pictures/6.png"
+                 alt="Dice logo" class="dice-brand">
+            <div style="display: flex">
+                <div id="slot-words-header" class="h1 slot-words-container" style="">
+                    <span class="job-search-word-carousel">Find a work of dreams</span>
+                </div>
+            </div>
+            <span class="job-search-tagline"><p>Set your career in motion with Dice</p></span>
+        </div>
+    </div>
+    <div class="s01">
+        <div class="inner-form">
+            <div class="input-field first-wrap">
+                <input id="search" style="width: 300px" type="text" placeholder="What are you looking for?" class="form-control">
+            </div>
+            <div class="input-field second-wrap">
+                <input id="location" style="width: 300px" type="text" placeholder="location " class="form-control">
+            </div>
+            <div class="input-field third-wrap">
+                <button class="btn btn-primary" type="button">Search</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="stackable-page-component">
+            <div class="text-center-dhi">
+                <div class="down-arrow-decoration" onclick="scrollWin();" data-target="#el" id="ctaDownArrow">
+                    <i class="fa fa-arrow-down"></i>
+                </div>
+                <div class="has-edit-button" id="ctaDocumentText">
+                    <p class="title"></p>
+                    <div class="document-text">
+                        <h1>Dice is the leading career destination for tech experts at every stage of their
+                            careers.</h1></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-sm-4 offset-1 animation-text d-flex align-items-center">
 
 
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.blade.php" class="logo">Job Agency<em> Website</em></a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="index.blade.php" class="active">Home</a></li>
-                            <li><a href="jobs.html">Jobs</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+            <article class="has-edit-button">
+                <h2>FIND YOUR
+                    PERFECT
+                    JOB MATCH</h2>
+                <div class="body-animation">
+                    <p>Search results tuned precisely to the criteria you set so we can better connect you with relevant
+                        and personalized tech positions.</p></div>
+            </article>
+        </div>
+        <div class="col-sm-6 offset-sm-1">
+            <img style="width: 90%" src="pictures/1.PNG">
+        </div>
+    </div>
+    <div class="row mt-lg-5">
+        <div class="col-sm-5 offset-sm-1 animation-text d-flex align-items-center">
+            <img style="width: 90%" src="pictures/2.PNG">
+        </div>
+        <div class="col-sm-4 ">
+            <article class="has-edit-button">
+                <h2>TAKE CONTROL OVER YOUR CONTENT</h2>
+                <div class="body-animation">
+                    <p>Actively searching? Just browsing? Set personalized job alerts and control your profile
+                        visibility to get noticed by top tech employers.</p></div>
+            </article>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-sm-4 offset-1 animation-text d-flex align-items-center">
 
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="about.html">About Us</a>
-                                    <a class="dropdown-item" href="team.html">Team</a>
-                                    <a class="dropdown-item" href="blog.html">Blog</a>
-                                    <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                                    <a class="dropdown-item" href="terms.html">Terms</a>
+
+            <article class="has-edit-button">
+                <h2>GAIN INSIGHTS INTO YOUR TECH CAREER</h2>
+                <div class="body-animation">
+                    <p>With your free IITU profile and our advanced data tools, you've got access to personalized salary
+                        information
+                        and data insights to level up your tech career.</p></div>
+            </article>
+        </div>
+        <div class="col-sm-6 offset-sm-1">
+            <img style="width: 90%" src="pictures/3.PNG">
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <div>
+            <footer class="dice-footer" data-an-category="candidateFooterNavigation"
+                    data-analytics-event="footerNavigation">
+                <div class="container m-auto">
+                    <div class="has-edit-button"></div>
+
+                    <div class="row d-none d-lg-flex">
+                        <div class="col-3">
+                            <a href="/" class="footer-link" data-item-analytics="">
+
+                                <img width="150px"
+                                     src="pictures/6.png"
+                                     data-src="/binaries/content/gallery/dice/icons/dice-logo.svg" alt="Dice logo"
+                                     class="" style="">
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <footer class="text-white bg-footer-gray py-1">
+                                <div>
+                                    <div class="container m-auto pb-8" id="haha">
+                                        <div class="flex justify-center h-12"
+                                             style="font-size: 25px; font-weight: bold">
+                                            Контакты
+                                        </div>
+                                        <div class="flex flex-col justify-center whitespace-no-wrap">
+                                            <div class="grid grid-cols-2 gap-2">
+                                                <div class="flex flex-col items-end mt-2">
+                                                    <div style="font-size: 20px">Callcenter:
+                                                        <div style="font-size: 15px"><span>+7(727) 320 00 00</span>
+                                                        </div>
+                                                        <div style="font-size: 15px"><span>+7(727) 320 00 01</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div style="font-size: 20px;margin-top: 10px;margin-bottom: 30px">
+                                                        Деканат:
+                                                        <div style="font-size: 15px"><span>+7(727) 244 83 71</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
+                            </footer>
+                        </div>
+                        <div class="col-3">
+                            <div class="menu-title" style="font-size: 25px">IITU Everywhere</div>
+                            <ul class="list-unstyled" data-analytics-parent="Dice Everywhere">
+                                <li class="list-item-inline"><a href="https://twitter.com/Dicedotcom" rel="nofollow"
+                                                                class="footer-link" data-item-analytics="">
+                                        <div style="color: white;font-size: 15px">
+                                            <i class="fab fa-twitter"></i>
+                                            <span>Twitter</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-item-inline"><a href="https://twitter.com/Dicedotcom" rel="nofollow"
+                                                                class="footer-link" data-item-analytics="">
+                                        <div style="color: white;font-size: 15px">
+                                            <i class="fab fa-facebook-f"></i>
+                                            <span>Facebook</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li><a href="https://apps.apple.com/app/id794201100" rel="nofollow" class="footer-link"
+                                       data-item-analytics="">
+
+                                        <img src="pictures/4.png"
+                                             data-src="/binaries/content/gallery/dice/icons/apple-app-store-badge.svg"
+                                             alt="App Store" class="" style="width: 127px;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.dice.app.jobs&amp;referrer=trackingcode%3DDI_OS_UN_MA_UP%26utm_campaign%3DDice%2520Universal%2520Header%2520and%2520Footer%26utm_source%3DDice%26utm_medium%3DOnsite%26utm_content%3DUniversal%26utm_term%3DUnpaid"
+                                       rel="nofollow" class="footer-link" data-item-analytics="">
+
+                                        <img src="pictures/5.png"
+                                             data-src="/binaries/content/gallery/dice/icons/google-play-badge.png"
+                                             alt="Google Play" class=""
+                                             style="width: 147px; height: 60px; margin-left: -10px; margin-top: -15px;">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
                 </div>
-            </div>
+                <div class="footer-copyright" style="" data-an-category="footerCopyright">
+                    <div class="container m-auto pt-3">
+                        <div class="has-edit-button"></div>
+                        <p>Done By Students from CSSE-1803 (Sagandykov Almat && Tulekova Ulbolsyn)</p>
+
+                        <p><img width="45px" src="pictures/6.png">&nbsp; &nbsp;<a
+                                href="https://iitu.kz/ru/" style="margin-top: -20px">IITU</a>&nbsp;</p>
+                    </div>
+                </div>
+            </footer>
+
+
         </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-
-    <!-- ***** Main Banner Area Start ***** -->
-    <div class="main-banner" id="top">
-        <video autoplay muted loop id="bg-video">
-            <source src="assets/images/video.mp4" type="video/mp4" />
-        </video>
-
-        <div class="video-overlay header-text">
-            <div class="caption">
-                <h6>Lorem ipsum dolor sit amet</h6>
-                <h2>Find the perfect <em>Job</em></h2>
-                <div class="main-button">
-                    <a href="contact.html">Contact Us</a>
-                </div>
-            </div>
+        <div>
         </div>
     </div>
-    <!-- ***** Main Banner Area End ***** -->
+</div>
+<script type="text/javascript">
+    function scrollWin() {
+        window.scrollTo(0,2000);
 
-   <!-- ***** Cars Starts ***** -->
-    <section class="section" id="trainers">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading">
-                        <h2>Featured <em>Jobs</em></h2>
-                        <img src="assets/images/line-dec.png" alt="">
-                        <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/product-1-720x480.jpg" alt="">
-                        </div>
-                        <div class="down-content">
-                            <span> <sup>$</sup>70 000 </span>
-
-                            <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-
-                            <p>Medical &nbsp;/&nbsp; Health Jobs</p>
-
-                            <ul class="social-icons">
-                                <li><a href="job-details.html">+ View More</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/product-2-720x480.jpg" alt="">
-                        </div>
-                        <div class="down-content">
-                            <span> <sup>$</sup>70 000 </span>
-
-                            <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-
-                            <p>Medical &nbsp;/&nbsp; Health Jobs</p>
-
-                            <ul class="social-icons">
-                                <li><a href="job-details.html">+ View More</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/product-3-720x480.jpg" alt="">
-                        </div>
-                        <div class="down-content">
-                            <span> <sup>$</sup>70 000 </span>
-
-                            <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-
-                            <p>Medical &nbsp;/&nbsp; Health Jobs</p>
-
-                            <ul class="social-icons">
-                                <li><a href="job-details.html">+ View More</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="main-button text-center">
-                <a href="jobs.html">View Jobs</a>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Cars Ends ***** -->
-
-    <section class="section section-bg" id="schedule" style="background-image: url(assets/images/about-fullscreen-1-1920x700.jpg)">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading dark-bg">
-                        <h2>Read <em>About Us</em></h2>
-                        <img src="assets/images/line-dec.png" alt="">
-                        <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="cta-content text-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore deleniti voluptas enim! Provident consectetur id earum ducimus facilis, aspernatur hic, alias, harum rerum velit voluptas, voluptate enim! Eos, sunt, quidem.</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nulla quo cum officia laboriosam. Amet tempore, aliquid quia eius commodi, doloremque omnis delectus laudantium dolor reiciendis non nulla! Doloremque maxime quo eum in culpa mollitia similique eius doloribus voluptatem facilis! Voluptatibus, eligendi, illum. Distinctio, non!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ***** Blog Start ***** -->
-    <section class="section" id="our-classes">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading">
-                        <h2>Read our <em>Blog</em></h2>
-                        <img src="assets/images/line-dec.png" alt="">
-                        <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row" id="tabs">
-              <div class="col-lg-4">
-                <ul>
-                  <li><a href='#tabs-1'>Lorem ipsum dolor sit amet, consectetur adipisicing.</a></li>
-                  <li><a href='#tabs-2'>Aspernatur excepturi magni, placeat rerum nobis magnam libero! Soluta.</a></li>
-                  <li><a href='#tabs-3'>Sunt hic recusandae vitae explicabo quidem laudantium corrupti non adipisci nihil.</a></li>
-                  <div class="main-rounded-button"><a href="blog.html">Read More</a></div>
-                </ul>
-              </div>
-              <div class="col-lg-8">
-                <section class='tabs-content'>
-                  <article id='tabs-1'>
-                    <img src="assets/images/blog-image-1-940x460.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
-
-                    <p><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2020 10:10 &nbsp;|&nbsp; <i class="fa fa-comments"></i>  15 comments</p>
-
-                    <p>Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
-                    <div class="main-button">
-                        <a href="blog-details.html">Continue Reading</a>
-                    </div>
-                  </article>
-                  <article id='tabs-2'>
-                    <img src="assets/images/blog-image-2-940x460.jpg" alt="">
-                    <h4>Aspernatur excepturi magni, placeat rerum nobis magnam libero! Soluta.</h4>
-                    <p><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2020 10:10 &nbsp;|&nbsp; <i class="fa fa-comments"></i>  15 comments</p>
-                    <p>Integer dapibus, est vel dapibus mattis, sem mauris luctus leo, ac pulvinar quam tortor a velit. Praesent ultrices erat ante, in ultricies augue ultricies faucibus. Nam tellus nibh, ullamcorper at mattis non, rhoncus sed massa. Cras quis pulvinar eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <div class="main-button">
-                        <a href="blog-details.html">Continue Reading</a>
-                    </div>
-                  </article>
-                  <article id='tabs-3'>
-                    <img src="assets/images/blog-image-3-940x460.jpg" alt="">
-                    <h4>Sunt hic recusandae vitae explicabo quidem laudantium corrupti non adipisci nihil.</h4>
-                    <p><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2020 10:10 &nbsp;|&nbsp; <i class="fa fa-comments"></i>  15 comments</p>
-                    <p>Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id auctor neque posuere sit amet. Aliquam pharetra, augue vel cursus porta, nisi tortor vulputate sapien, id scelerisque felis magna id felis. Proin neque metus, pellentesque pharetra semper vel, accumsan a neque.</p>
-                    <div class="main-button">
-                        <a href="blog-details.html">Continue Reading</a>
-                    </div>
-                  </article>
-                </section>
-              </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Blog End ***** -->
-
-    <!-- ***** Call to Action Start ***** -->
-    <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/banner-image-1-1920x500.jpg)">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="cta-content">
-                        <h2>Send us a <em>message</em></h2>
-                        <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
-                        <div class="main-button">
-                            <a href="contact.html">Contact us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Call to Action End ***** -->
-
-    <!-- ***** Testimonials Item Start ***** -->
-    <section class="section" id="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading">
-                        <h2>Read our <em>Testimonials</em></h2>
-                        <img src="assets/images/line-dec.png" alt="waves">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem incidunt alias minima tenetur nemo necessitatibus?</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="features-items">
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="First One">
-                            </div>
-                            <div class="right-content">
-                                <h4>John Doe</h4>
-                                <p><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</em></p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="second one">
-                            </div>
-                            <div class="right-content">
-                                <h4>John Doe</h4>
-                                <p><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</em></p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="features-items">
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="fourth muscle">
-                            </div>
-                            <div class="right-content">
-                                <h4>John Doe</h4>
-                                <p><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</em></p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="training fifth">
-                            </div>
-                            <div class="right-content">
-                                <h4>John Doe</h4>
-                                <p><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</em></p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="main-button text-center">
-                <a href="testimonials.html">Read More</a>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Testimonials Item End ***** -->
-
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>
-                        Copyright © 2020 Company Name
-                        - Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script>
-    <script src="assets/js/mixitup.js"></script>
-    <script src="assets/js/accordions.js"></script>
-
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-
-  </body>
+    }
+</script>
+</body>
 </html>

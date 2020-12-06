@@ -3,12 +3,12 @@
     Post Job
 @endsection
 @section('content')
-    <div class="container" style="display: flex">
-
+    <div class="container" >
+        <div class="row">
         @foreach($data as $el)
             @foreach($employers as $emp)
                 @if($el->employer_id==$emp->id)
-                    <div class="col-4">
+                    <div class="col-4 mt-3">
                         <form action="{{route('new.request')}}" method="post">
                             @csrf
                             <input type="hidden" value="{{$stud->id}}" name="student_id">
@@ -28,6 +28,7 @@
                 @endif
             @endforeach
         @endforeach
-
+            </div>
+        </div>
     </div>
 @endsection
