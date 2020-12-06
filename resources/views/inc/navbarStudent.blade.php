@@ -11,7 +11,7 @@
                 <a class="nav-link" href="{{route('employer-home')}}">All Jobs</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="{{route('employer-postJob')}}">Post Job</a>
+                <a class="nav-link" href="{{route('stud-requests')}}">Requests</a>
             </li>
         </ul>
     </div>

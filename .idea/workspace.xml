@@ -19,13 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bfa379f-1148-422e-87c0-d0a2ac63809b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/inc/navbarStudent.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/appStudent.blade.php" afterDir="false" />
+    <list default="true" id="7bfa379f-1148-422e-87c0-d0a2ac63809b" name="Default Changelist" comment="Student Home Commit">
+      <change afterPath="$PROJECT_DIR$/resources/views/studentRequests.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminPageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/postJob.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/postJob.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/inc/navbarStudent.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inc/navbarStudent.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/studentMain.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/studentMain.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +164,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/inc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -176,9 +176,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\views" />
       <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\views\inc" />
       <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\views\layouts" />
-      <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\views" />
       <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\js" />
       <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\css" />
     </key>
@@ -204,8 +204,16 @@
       <workItem from="1607159186106" duration="4571000" />
       <workItem from="1607164585505" duration="8384000" />
       <workItem from="1607181409817" duration="1698000" />
-      <workItem from="1607183157922" duration="2390000" />
+      <workItem from="1607183157922" duration="11986000" />
     </task>
+    <task id="LOCAL-00001" summary="Student Home Commit">
+      <created>1607194443085</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607194443085</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +230,19 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Student Home Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Student Home Commit" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="263" y="19" key="#CLI_Interpreters" timestamp="1607197376234">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="19" key="#CLI_Interpreters/0.0.1366.728@0.0.1366.728" timestamp="1607197376234" />
+    <state x="390" y="7" key="#PHP" timestamp="1607197377435">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="7" key="#PHP/0.0.1366.728@0.0.1366.728" timestamp="1607197377435" />
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606829339984">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -255,6 +275,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606840634189" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607194551233">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607194551233" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607161074642">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

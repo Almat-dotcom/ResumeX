@@ -5,7 +5,7 @@
 @section('content')
     <div class="container" style="display: flex">
 
-        @foreach($data as $el)
+        @foreach($w as $el)
             @foreach($employers as $emp)
                 @if($el->employer_id==$emp->id)
                     <div class="col-4">

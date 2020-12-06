@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::post('students/newRequest','App\Http\Controllers\AdminPageController@newRequest')->name('new.request');
+
+Route::get('students/requests','App\Http\Controllers\AdminPageController@studRequests')->name('stud-requests');
+
 
 Route::get('/', 'App\Http\Controllers\AdminPageController@main')->name('admin-students');
 

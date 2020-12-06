@@ -182,10 +182,11 @@ class AdminPageController extends Controller
             return redirect()->route('employer-home');
         }else if($student!=null){
             $req->session()->put('myUser', $student);
-           // return redirect()->route('students');
-            $data=Works::all();
-            $employers=Employers::all();
-             return view("studentMain",compact('data','employers'));
+            return redirect()->route('students');
+//            $data=Works::all();
+//            $employers=Employers::all();
+//            $stud = $req->session()->get('myUser');
+//             return view("studentMain",compact('data','employers','stud'));
         }else {
             return "heeeey";
         }
@@ -213,7 +214,6 @@ class AdminPageController extends Controller
         $work->city_id=$req->input('city_id');
         $work->employer_id=$req->input('emp_id');
         $work->salary=$req->input('salary');
-
         $work->save();
 
         return redirect()->route('employer-home');
@@ -248,12 +248,36 @@ class AdminPageController extends Controller
 
     public function studHome(Request $request){
         if ($request->session()->has('myUser')) {
-            $emp = $request->session()->get('myUser');
 
-            $data = Works::all();
-            return view('studentMain', compact('data'));
+            $data=Works::all();
+            $employers=Employers::all();
+            $stud = $request->session()->get('myUser');
+            return view("studentMain",compact('data','employers','stud'));
         }
         return "okokoko";
+    }
+
+    public function newRequest(Request $request){
+//        $r=new Request();
+//        $r->student_id=$request->input('student_id');
+//        $r->work_id=$request->input('work_id');
+        DB::insert('insert into request (student_id,work_id) values (?,?)',[$request->input('student_id'),$request->input('work_id')]);
+        return redirect()->route('students')->with('success', 'Request was sended successfully!!!');
+
+    }
+
+    public function studRequests(Request $request){
+        if ($request->session()->has('myUser')) {
+            $stud = $request->session()->get('myUser');
+            //$applies = DB::table('request')->where('student_id', '=', $stud->id)->get();
+            $employers=Employers::all();
+            $w=DB::table('works')
+                ->join('request','works.id','=','request.work_id')
+                ->join('students','students.id','=','request.student_id')
+                ->select('works.*')
+                ->get();
+            return view("studentRequests",compact('w','employers','stud'));
+        }
     }
 }
 
