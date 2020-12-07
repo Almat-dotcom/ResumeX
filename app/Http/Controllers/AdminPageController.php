@@ -27,6 +27,7 @@ class AdminPageController extends Controller
         $student->year_to = $req->input('year_to');
         $student->email = $req->input('email');
         $student->password = $req->input('password');
+        $student->telNumber = $req->input('telNumber');
         $student->experience = $req->input('experience');
 
         $student->save();
@@ -37,18 +38,18 @@ class AdminPageController extends Controller
 
     public function main(Request $request)
     {
-//        if ($request->session()->has('myUser')) {
-//            //$student=Students::all();
-//            //$student=new Students();
-//            return view("adminStudents", ['data' => Students::all()]);
-//            //return view("adminStudents",['data'=> $student->inRandomOrder()->get()]);
-//            //return view("adminStudents",['data'=> $student->orderBy('id','asc')->get()]);
-//            //return view("adminStudents",['data'=> $student->orderBy('id','asc')->skip(1)->take(2)->get()]);
-//            //return view("adminStudents",['data'=> $student->where('name','=','Almat')->get()]);
-//        }else{
-//            return redirect()->route('login');
-//        }
-        return view("index");
+        if ($request->session()->has('myUser')) {
+            //$student=Students::all();
+            //$student=new Students();
+            return view("adminStudents", ['data' => Students::all()]);
+            //return view("adminStudents",['data'=> $student->inRandomOrder()->get()]);
+            //return view("adminStudents",['data'=> $student->orderBy('id','asc')->get()]);
+            //return view("adminStudents",['data'=> $student->orderBy('id','asc')->skip(1)->take(2)->get()]);
+            //return view("adminStudents",['data'=> $student->where('name','=','Almat')->get()]);
+        }else{
+            return redirect()->route('login');
+        }
+
     }
 
     public function detailStudent($id)
@@ -75,6 +76,7 @@ class AdminPageController extends Controller
         $student->year_to = $req->input('year_to');
         $student->email = $req->input('email');
         $student->password = $req->input('password');
+        $student->telNumber = $req->input('telNumber');
         $student->experience = $req->input('experience');
 
         $student->save();
@@ -295,10 +297,16 @@ class AdminPageController extends Controller
                 ->where('works.employer_id','=',$employer->id)
                 ->join('request','works.id','=','request.work_id')
                 ->join('students','students.id','=','request.student_id')
-                ->select('students.*','works.*')
+                ->select('students.*','works.*','students.id as sts')
                 ->get();
             return view("employerApplications",compact('w','students','employer'));
         }
+    }
+
+    public function employerApplicationDetails(Request  $request){
+        $w=Works::find($request->input('work_id'));
+        $s=Students::find($request->input('student_id'));
+        return view("employerApplicationDetails",compact('w','s'));
     }
 }
 

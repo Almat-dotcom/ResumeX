@@ -56,6 +56,11 @@
                            class="form-control">
                 </div>
                 <div class="form-group">
+                    <label for="name">Enter the telephon number</label>
+                    <input type="text" name="telNumber" value="{{$data->telNumber}}" placeholder="Enter..." id="name"
+                           class="form-control">
+                </div>
+                <div class="form-group">
                     <label for="name">Enter the experience</label>
                     <input type="text" name="experience" value="{{$data->experience}}" placeholder="Enter..." id="name"
                            class="form-control">

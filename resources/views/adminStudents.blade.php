@@ -29,6 +29,7 @@
             <th>IIN</th>
             <th>GPA</th>
             <th>YEAR</th>
+            <th>Telephon Number</th>
             <th>DETAILS</th>
         </tr>
         </thead>
@@ -41,6 +42,7 @@
                 <td>{{$el->iin}}</td>
                 <td>{{$el->gpa}}</td>
                 <td>{{$el->year_from}} {{$el->year_to}}</td>
+                <td>{{$el->telNumber}}</td>
                 <td>
                     <a href="{{ route('student-update',$el->id) }}">
                         <button class="btn btn-warning">Details</button>
@@ -108,6 +110,10 @@
                         <div class="form-group">
                             <label>Year_To:</label>
                             <input type="text" name="year_to" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Telephon</label>
+                            <input type="text" name="telNumber" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Experience:</label>
