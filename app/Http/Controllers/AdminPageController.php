@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Cities;
 use App\Models\Employers;
+use App\Models\User;
 use App\Models\Works;
 use Illuminate\Http\Request;
 use App\Http\Requests\AdminPageRequest;
@@ -35,9 +36,7 @@ class AdminPageController extends Controller
         return redirect()->route('admin-students')->with('success', 'Student was added successfully!!!');
     }
 
-
-    public function main(Request $request)
-    {
+    public function adminStudents(Request $request){
         if ($request->session()->has('myUser')) {
             //$student=Students::all();
             //$student=new Students();
@@ -49,19 +48,44 @@ class AdminPageController extends Controller
         }else{
             return redirect()->route('login');
         }
+    }
+
+
+    public function main(Request $request)
+    {
+//        if ($request->session()->has('myUser')) {
+//            //$student=Students::all();
+//            //$student=new Students();
+//            return view("adminStudents", ['data' => Students::all()]);
+//            //return view("adminStudents",['data'=> $student->inRandomOrder()->get()]);
+//            //return view("adminStudents",['data'=> $student->orderBy('id','asc')->get()]);
+//            //return view("adminStudents",['data'=> $student->orderBy('id','asc')->skip(1)->take(2)->get()]);
+//            //return view("adminStudents",['data'=> $student->where('name','=','Almat')->get()]);
+//        }else{
+//            return redirect()->route('login');
+//        }
+        return view("index");
 
     }
 
-    public function detailStudent($id)
+    public function detailStudent($id,Request $request)
     {
-        $student = new Students;
-        return view('detailsStudent', ['data' => $student->find($id)]);
+        if ($request->session()->has('myUser')) {
+            $student = new Students;
+            return view('detailsStudent', ['data' => $student->find($id)]);
+        }else{
+            return redirect()->route('login');
+        }
     }
 
-    public function editStudent($id)
+    public function editStudent($id,Request $request)
     {
-        $student = new Students();
-        return view('editStudent', ['data' => $student->find($id)]);
+        if ($request->session()->has('myUser')) {
+            $student = new Students();
+            return view('editStudent', ['data' => $student->find($id)]);
+        }else{
+            return redirect()->route('login');
+        }
     }
 
     public function saveStudent($id, AdminPageRequest $req)
@@ -91,15 +115,19 @@ class AdminPageController extends Controller
 
     }
 
-    public function mainEmployer()
+    public function mainEmployer(Request $request)
     {
-        //$student=Students::all();
-        //$student=new Students();
-        return view("adminEmployers", ['data' => Employers::all()]);
-        //return view("adminStudents",['data'=> $student->inRandomOrder()->get()]);
-        //return view("adminStudents",['data'=> $student->orderBy('id','asc')->get()]);
-        //return view("adminStudents",['data'=> $student->orderBy('id','asc')->skip(1)->take(2)->get()]);
-        //return view("adminStudents",['data'=> $student->where('name','=','Almat')->get()]);
+        if ($request->session()->has('myUser')) {
+            //$student=Students::all();
+            //$student=new Students();
+            return view("adminEmployers", ['data' => Employers::all()]);
+            //return view("adminStudents",['data'=> $student->inRandomOrder()->get()]);
+            //return view("adminStudents",['data'=> $student->orderBy('id','asc')->get()]);
+            //return view("adminStudents",['data'=> $student->orderBy('id','asc')->skip(1)->take(2)->get()]);
+            //return view("adminStudents",['data'=> $student->where('name','=','Almat')->get()]);
+        }else{
+            return redirect()->route('login');
+        }
     }
 
     public function addEmployer(AdminPageEmployersRequest $req)
@@ -116,10 +144,14 @@ class AdminPageController extends Controller
         return redirect()->route('admin-employers')->with('success', 'Employer was added successfully!!!');
     }
 
-    public function editEmployer($id)
+    public function editEmployer($id,Request $request   )
     {
-        $employer = new Employers();
-        return view('editEmployer', ['data' => $employer->find($id)]);
+        if ($request->session()->has('myUser')) {
+            $employer = new Employers();
+            return view('editEmployer', ['data' => $employer->find($id)]);
+        }else{
+            return redirect()->route('login');
+        }
     }
 
 
@@ -178,6 +210,8 @@ class AdminPageController extends Controller
         $employer = DB::table('employers')->where('email', '=', $email)->where('password', '=', $password)->first();
         $student = DB::table('students')->where('email', '=', $email)->where('password', '=', $password)->first();
         if ($email == 'admin@gmail.com' && $req->input('password') == 'admin') {
+            $us=new User();
+            $req->session()->put('myUser', $us);
             return view("adminStudents", ['data' => Students::all()]);
         } else if ($employer != null) {
             $req->session()->put('myUser', $employer);
@@ -190,7 +224,7 @@ class AdminPageController extends Controller
 //            $stud = $req->session()->get('myUser');
 //             return view("studentMain",compact('data','employers','stud'));
         }else {
-            return "heeeey";
+            return redirect()->route('main');
         }
     }
 
@@ -203,8 +237,9 @@ class AdminPageController extends Controller
             $data = DB::table('works')->where('employer_id', '=', $emp->id)->get();
             $cities=Cities::all();
             return view('employerMain', compact('data','cities'));
+        }else{
+            return redirect()->route('login');
         }
-        return "okokoko";
     }
 
     public function addJob(Request $req)
@@ -222,10 +257,13 @@ class AdminPageController extends Controller
     }
 
     public function detailJob(Request $request,$id)
-    {
+    {if ($request->session()->has('myUser')) {
         $work = Works::find($id);
-        $cities=Cities::all();
-        return view('editJob', compact('work','cities'));
+        $cities = Cities::all();
+        return view('editJob', compact('work', 'cities'));
+    }else{
+        return redirect()->route('login');
+    }
     }
 
     public function editJob($id, Request $req){
@@ -255,8 +293,9 @@ class AdminPageController extends Controller
             $employers=Employers::all();
             $stud = $request->session()->get('myUser');
             return view("studentMain",compact('data','employers','stud'));
+        }else{
+            return redirect()->route('login');
         }
-        return "okokoko";
     }
 
     public function newRequest(Request $request){
@@ -279,6 +318,8 @@ class AdminPageController extends Controller
                 ->select('works.*')
                 ->get();
             return view("studentRequests",compact('w','employers','stud'));
+        }else{
+            return redirect()->route('login');
         }
     }
 
@@ -300,13 +341,24 @@ class AdminPageController extends Controller
                 ->select('students.*','works.*','students.id as sts')
                 ->get();
             return view("employerApplications",compact('w','students','employer'));
+        }else{
+            return redirect()->route('login');
         }
     }
 
     public function employerApplicationDetails(Request  $request){
-        $w=Works::find($request->input('work_id'));
-        $s=Students::find($request->input('student_id'));
-        return view("employerApplicationDetails",compact('w','s'));
+        if ($request->session()->has('myUser')) {
+            $w = Works::find($request->input('work_id'));
+            $s = Students::find($request->input('student_id'));
+            return view("employerApplicationDetails", compact('w', 's'));
+        }else{
+            return redirect()->route('login');
+        }
+    }
+
+    public function logout(Request $request){
+        $request->session()->forget('myUser');
+        return redirect()->route('main');
     }
 }
 

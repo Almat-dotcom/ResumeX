@@ -10,18 +10,23 @@ Route::post('students/removeRequest','App\Http\Controllers\AdminPageController@r
 Route::get('students/requests','App\Http\Controllers\AdminPageController@studRequests')->name('stud-requests');
 
 
-Route::get('/', 'App\Http\Controllers\AdminPageController@main')->name('admin-students');
+Route::get('/', 'App\Http\Controllers\AdminPageController@main')->name('main');
+
+Route::get('/adminStudents', 'App\Http\Controllers\AdminPageController@adminStudents')->name('admin-students');
 
 Route::get('/employers', 'App\Http\Controllers\AdminPageController@mainEmployer')->name('admin-employers');
 Route::get('/students', 'App\Http\Controllers\AdminPageController@studHome')->name('students');
 
 Route::post('/about/submit','App\Http\Controllers\AdminPageController@submit')->name('about-form');
 
+Route::get('/logout','App\Http\Controllers\AdminPageController@logout')->name('logout');
+
+
 Route::post('/about/addEmployer','App\Http\Controllers\AdminPageController@addEmployer')->name('employer-add');
 
-Route::get('//{id}/update', 'App\Http\Controllers\AdminPageController@editStudent')->name('student-update');
+Route::get('/update/{id}', 'App\Http\Controllers\AdminPageController@editStudent')->name('student-update');
 
-Route::get('//{id}/updateEmployer', 'App\Http\Controllers\AdminPageController@editEmployer')->name('employer-update');
+Route::get('/updateEmployer/{id}', 'App\Http\Controllers\AdminPageController@editEmployer')->name('employer-update');
 
 Route::post('//{id}/update', 'App\Http\Controllers\AdminPageController@saveStudent')->name('student-save');
 

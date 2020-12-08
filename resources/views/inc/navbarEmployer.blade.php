@@ -17,5 +17,10 @@
                 <a class="nav-link" href="{{route('employer-applications')}}">Applications</a>
             </li>
         </ul>
+        <ul class="navbar-nav" style="margin-left: auto; margin-right: 5px">
+            <li class="nav-item active" >
+                <a class="nav-link" href="{{route('logout')}}">Logout</a>
+            </li>
+        </ul>
     </div>
 </nav>

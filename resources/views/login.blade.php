@@ -32,10 +32,14 @@
                     <label class="mt-1 ml-2"> Remember me</label>
                 </div>
             </div>
-            <div class="form-group">
-                <button class="btn btn-primary">SIGN IN</button>
+            <div class="modal-footer">
+                <div class="form-group">
+                    <button class="btn btn-primary">SIGN IN</button>
+                </div>
+                <div class="form-group">
+                    <a href="{{route('main')}}" class="btn btn-success">Main Page</a>
+                </div>
             </div>
-
         </form>
     </div>
 </div>

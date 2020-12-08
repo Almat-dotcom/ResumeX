@@ -38,7 +38,7 @@
                 <a class="nav-link" href="#">Contacts <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="SignInPage.html">Sign In</a>
+                <a class="nav-link" href="{{route('login')}}">Sign In</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="Registration.html">Sign Up</a>
