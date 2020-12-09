@@ -19,14 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bfa379f-1148-422e-87c0-d0a2ac63809b" name="Default Changelist" comment="New Row Of Students">
+    <list default="true" id="7bfa379f-1148-422e-87c0-d0a2ac63809b" name="Default Changelist" comment="row of table students">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminPageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/adminEmployers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminEmployers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/adminStudents.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminStudents.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employerApplicationDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employerApplicationDetails.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employerApplications.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employerApplications.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employerMain.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employerMain.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/inc/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inc/navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/inc/navbarEmployer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inc/navbarEmployer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/inc/navbarStudent.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inc/navbarStudent.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/postJob.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/postJob.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/studentMain.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/studentMain.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/studentRequests.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/studentRequests.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,15 +187,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\storage\app\public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\views" />
       <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\views\inc" />
       <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\views\layouts" />
       <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\js" />
       <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\resources\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Comp\Downloads\OpenServer\domains\callToWork\storage\app\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -212,7 +220,8 @@
       <workItem from="1607164585505" duration="8384000" />
       <workItem from="1607181409817" duration="1698000" />
       <workItem from="1607183157922" duration="31687000" />
-      <workItem from="1607439499994" duration="5675000" />
+      <workItem from="1607439499994" duration="13756000" />
+      <workItem from="1607536874210" duration="4419000" />
     </task>
     <task id="LOCAL-00001" summary="Student Home Commit">
       <created>1607194443085</created>
@@ -256,7 +265,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607306220497</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Session Protection">
+      <created>1607445414154</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607445414154</updated>
+    </task>
+    <task id="LOCAL-00008" summary="row of table students">
+      <created>1607445528603</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607445528603</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +304,9 @@
     <MESSAGE value="Css Import Styles" />
     <MESSAGE value="Employer Applications" />
     <MESSAGE value="New Row Of Students" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Row Of Students" />
+    <MESSAGE value="Session Protection" />
+    <MESSAGE value="row of table students" />
+    <option name="LAST_COMMIT_MESSAGE" value="row of table students" />
   </component>
   <component name="WindowStateProjectService">
     <state x="263" y="19" key="#CLI_Interpreters" timestamp="1607197376234">
@@ -324,10 +349,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606840634189" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607306227942">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607445531292">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607306227942" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607445531292" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607161074642">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

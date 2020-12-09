@@ -16,11 +16,11 @@
                             <div class="card" style="width: 18rem;">
                                 <img style="height: 250px" src="{{$emp->picture_llp}}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h4 class="card-title">{{$emp->llp}}</h4>
+                                    <h4 class="card-title" style="font-weight: bold;color: #990f02">{{$emp->llp}}</h4>
                                     <h5 class="card-title">{{$el->salary}} $</h5>
                                     <h5 class="card-title">{{$el->job_title}}: {{$el->skills}}</h5>
                                     <p class="card-text">{{$el->description}}</p>
-                                    <button class="btn btn-primary">Apply</button>
+                                    <button class="btn" style="background-color: #1e0345;color: white">Apply</button>
                                 </div>
                             </div>
                         </form>

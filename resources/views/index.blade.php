@@ -25,7 +25,7 @@
     <title>MAIN</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #990f02">
     <a class="navbar-brand" href="#">Main Page</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,9 +39,6 @@
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="{{route('login')}}">Sign In</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="Registration.html">Sign Up</a>
             </li>
         </ul>
     </div>
@@ -68,7 +65,7 @@
                 <input id="location" style="width: 300px" type="text" placeholder="location " class="form-control">
             </div>
             <div class="input-field third-wrap">
-                <button class="btn btn-primary" type="button">Search</button>
+                <button class="btn" style="background-color: #990f02; color: white" type="button">Search</button>
             </div>
         </div>
     </div>

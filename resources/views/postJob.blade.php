@@ -5,15 +5,15 @@
 @section('content')
     @if (session()->has('myUser'))
         <div style="background-color: rgba(196,203,217,0.18);margin-top: -48px">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Post Job</li>
+            <nav aria-label="" style="margin-top: -50px;background-color: white;color: white">
+                <ol class="breadcrumb" style="background-color: white">
+                    <li class="breadcrumb-item" ><a href="{{route('employer-home')}}" style=" color: gray ">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style=" color: #990f02 ">Post Job</li>
                 </ol>
             </nav>
             <div class="col-12">
                 <div class="col-sm-8 offset-2">
-                    <h1>Create your job posting</h1>
+                    <h1 class=" text-center mt-5 mb-5">Create your job posting</h1>
                     <div class="dice-header section-header mt-4" style="background-color: white ">
                         <div class="container">
                             <div class="row">

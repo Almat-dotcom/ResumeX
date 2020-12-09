@@ -8,7 +8,7 @@
     <h1>All Employers</h1>
 
     <div class="mt-2 text-center">
-        <button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto" data-toggle="modal"
+        <button type="button" class="btn" style="margin-left: auto;background-color: #990d09; color: white; margin-right: auto" data-toggle="modal"
                 data-target="#staticBackdrop">
             +ADD NEW
         </button>
@@ -32,7 +32,7 @@
                 <td>{{$el->llp}}</td>
                 <td>
                     <a href="{{ route('employer-update',$el->id) }}">
-                        <button class="btn btn-warning">Details</button>
+                        <button class="btn" style="background-color: #f28b4b;color: black">Details</button>
                     </a>
                 </td>
             </tr>
@@ -75,7 +75,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Add Employer</button>
+                        <button type="submit" class="btn" style="background-color: #990d09; color: white;">Add Employer</button>
                     </div>
                 </div>
             </div>

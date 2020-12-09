@@ -22,19 +22,9 @@
                 <input type="password" name="password" class="form-control">
                 <label style="font-size: 12px; color: #8c8685">Input your password</label>
             </div>
-            <div class="form-group">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </div>
-                    </div>
-                    <label class="mt-1 ml-2"> Remember me</label>
-                </div>
-            </div>
             <div class="modal-footer">
                 <div class="form-group">
-                    <button class="btn btn-primary">SIGN IN</button>
+                    <button class="btn" style="background-color: #990f02;color: white">SIGN IN</button>
                 </div>
                 <div class="form-group">
                     <a href="{{route('main')}}" class="btn btn-success">Main Page</a>
@@ -43,3 +33,5 @@
         </form>
     </div>
 </div>
+
+

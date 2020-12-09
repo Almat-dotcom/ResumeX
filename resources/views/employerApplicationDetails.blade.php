@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
         <div class="col-sm-6">
-            <h3 class="text-center">Student</h3>
+            <h3 class="text-center" style="color: #990d09;">Student</h3>
             <form class="mt-4 mb-4">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -47,7 +47,7 @@
             </form>
         </div>
         <div class="col-sm-6">
-            <h3 class="text-center">
+            <h3 class="text-center" style="color: #990d09">
                 Work
             </h3>
             <form class="mt-4 mb-4">

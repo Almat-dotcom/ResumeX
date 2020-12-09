@@ -36,7 +36,7 @@ Route::post('//{id}/delete', 'App\Http\Controllers\AdminPageController@deleteStu
 
 Route::post('/employer/{id}/delete', 'App\Http\Controllers\AdminPageController@deleteEmployer')->name('employer-delete');
 
-Route::post('//searchStudent','App\Http\Controllers\AdminPageController@searchStudent')->name('search-student');
+Route::get('//searchStudent','App\Http\Controllers\AdminPageController@searchStudent')->name('search-student');
 
 Route::get('/Employer/{id}', 'App\Http\Controllers\AdminPageController@employer')->name('employer');
 

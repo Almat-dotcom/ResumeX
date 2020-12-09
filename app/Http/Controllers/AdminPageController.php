@@ -36,20 +36,6 @@ class AdminPageController extends Controller
         return redirect()->route('admin-students')->with('success', 'Student was added successfully!!!');
     }
 
-    public function adminStudents(Request $request){
-        if ($request->session()->has('myUser')) {
-            //$student=Students::all();
-            //$student=new Students();
-            return view("adminStudents", ['data' => Students::all()]);
-            //return view("adminStudents",['data'=> $student->inRandomOrder()->get()]);
-            //return view("adminStudents",['data'=> $student->orderBy('id','asc')->get()]);
-            //return view("adminStudents",['data'=> $student->orderBy('id','asc')->skip(1)->take(2)->get()]);
-            //return view("adminStudents",['data'=> $student->where('name','=','Almat')->get()]);
-        }else{
-            return redirect()->route('login');
-        }
-    }
-
 
     public function main(Request $request)
     {
@@ -177,10 +163,27 @@ class AdminPageController extends Controller
 
     }
 
-    public function searchStudent($iin)
+    public function adminStudents(Request $request){
+        if ($request->session()->has('myUser')) {
+            $data=Students::all();
+            //$student=new Students();
+            $stud=null;
+            return view("adminStudents", compact('data','stud'));
+            //return view("adminStudents",['data'=> $student->inRandomOrder()->get()]);
+            //return view("adminStudents",['data'=> $student->orderBy('id','asc')->get()]);
+            //return view("adminStudents",['data'=> $student->orderBy('id','asc')->skip(1)->take(2)->get()]);
+            //return view("adminStudents",['data'=> $student->where('name','=','Almat')->get()]);
+        }else{
+            return redirect()->route('login');
+        }
+    }
+
+    public function searchStudent(Request $request)
     {
         $stud = new Students();
-        return view('adminStudents', ['student' => $stud->where('iin', '=', $iin)->get()]);
+        $iin=$request->input('iin');
+        $stud=DB::table('students')->where('iin','=',$iin)->first();
+        return view('adminStudents',compact('stud'));
     }
 
 //    public function employer($id){
